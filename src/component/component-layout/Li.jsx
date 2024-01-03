@@ -5,8 +5,7 @@ const Li = ({ className, innerLiContent }) => {
     return (
         <>
             <Link>
-                <li
-                    className={`text-[#222] text-base font-Poppins capitalize ${className}`}>
+                <li className={`font-Poppins capitalize ${className}`}>
                     {innerLiContent}
                 </li>
             </Link>

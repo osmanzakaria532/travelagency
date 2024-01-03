@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Container from "../component-layout/Container";
-import Image from "../component-layout/Image";
 
 import toDoHeadingShape from "../image/toDoHeadingShape.png";
 
@@ -33,21 +32,21 @@ const ToDo = () => {
         <>
             <div className="bg-[#F7F8FC] py-[120px]">
                 <Container>
-                    <div className="w-[521px] mx-auto mb-16 text-center relative">
+                    <div className="sm:w-[521px] mx-auto mb-16 text-center relative">
                         <h2 className="text-Primary-B text-5xl font-Volkhov font-bold leading-[54px] mb-6">
                             Things you need{" "}
                             <span className="text-Primary-A"> to do</span>
                         </h2>
-                        <p className="w-[430px] mx-auto text-Paragraph text-lg leading-8">
+                        <p className="sm:w-[430px] mx-auto text-Paragraph text-lg leading-8">
                             We ensure that you'll embark on a perfectly planned,
                             safe vacation at a price you can afford.
                         </p>
                         <img
                             src={toDoHeadingShape}
-                            className="absolute top-0 -right-[66px] translate-x-full"
+                            className="absolute top-0 sm:-right-[66px] sm:translate-x-full"
                         />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex flex-col sm:flex-row justify-between">
                         {div.length != 0 &&
                             div.map((value, index) => (
                                 <div className="w-[370px] py-10 px-10 bg-white rounded-[8px] relative z-10">
@@ -62,8 +61,7 @@ const ToDo = () => {
                                             {value.title}
                                         </h3>
                                         <p className="w-[290px] text-Paragraph text-base leading-[26px]">
-                                            Completes all the work associated
-                                            with planning and processing
+                                            {value.description}
                                         </p>
                                     </div>
                                     <img

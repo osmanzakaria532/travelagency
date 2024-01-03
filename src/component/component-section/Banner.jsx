@@ -9,14 +9,14 @@ const Banner = () => {
     return (
         <>
             <div className="pt-[38px] pb-[280px] bg-[#FEFCFB]">
-                <Container className="flex">
-                    <div className="w-[521px]">
-                        <h1 className="text-[#22222] text-[64px] font-Volkhov font-bold leading-[74px] mb-8">
+                <Container className="flex flex-col sm:flex-row px-3 sm:px-0">
+                    <div className="md:w-[521px] text-center sm:text-start">
+                        <h1 className="text-[#22222] text-[32px] sm:text-[64px] font-Volkhov font-bold sm:leading-[74px] mb-8 w-[300px] md:w-[521px] mx-auto">
                             Get started your exciting{" "}
                             <span className="text-[#FA7436]">journey</span> with
                             us.
                         </h1>
-                        <p className="w-[497px] text-[#666] text-xl font-Poppins leading-10 mb-16">
+                        <p className="sm:w-[497px] text-[#666] text-xl font-Poppins leading-8 sm:leading-10 mb-16">
                             A Team of experienced tourism professionals will
                             provide you with the best advice and tips for your
                             desire place.
@@ -26,7 +26,7 @@ const Banner = () => {
                             BtnClassName="px-[28px] text-[#FA7436]"
                         />
                     </div>
-                    <div className="w-[649px]  relative z-10">
+                    <div className="md:w-[649px]  relative z-10 hidden md:block">
                         <div className="flex justify-end">
                             <Image src={bannerImg} />
                         </div>
