@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Container from "../component-layout/Container";
 
 import toDoHeadingShape from "../../../src/assets/image/toDoHeadingShape.png";
+import img_1 from "../../../src/assets/image/toDoXIcon_1.png";
 
 const ToDo = () => {
     const [div, setDiv] = useState([
         {
-            image: "../../src/assets/image/toDoXIcon_1.png",
+            image: img_1,
             title: "Sign Up",
             description:
                 "Completes all the work associated with planning and processing",
