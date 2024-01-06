@@ -6,7 +6,7 @@ import Button from "../component-layout/Button";
 
 import { FaBarsProgress } from "react-icons/fa6";
 
-import logo from "../../../src/component/image/logo.png";
+import logo from "../../../src/assets/image/logo.png";
 
 const Navbar = () => {
     const [show, setShow] = useState(true);

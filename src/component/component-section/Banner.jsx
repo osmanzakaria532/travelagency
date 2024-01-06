@@ -3,7 +3,8 @@ import Container from "../component-layout/Container";
 import Button from "../component-layout/Button";
 import Image from "../component-layout/Image";
 
-import bannerImg from "../../../src/component/image/banner.png";
+import bannerImg from "../../../src/assets/image/banner.png";
+import bannerShape from "../../../src/assets/image/b-element.png";
 
 const Banner = () => {
     return (
@@ -31,7 +32,7 @@ const Banner = () => {
                             <Image src={bannerImg} />
                         </div>
                         <img
-                            src="/src/component/image/b-element.png"
+                            src={bannerShape}
                             className="absolute -top-[35px] -right-[59px] -z-10"
                         />
                     </div>

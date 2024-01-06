@@ -8,21 +8,20 @@ import { FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Li from "../component-layout/Li";
 
+import f_logo from "../../../src/assets/image/logo.png";
+
 const Footer = () => {
     return (
         <>
             <div className="bg-[#F7F8FC]">
                 <Container>
                     <div>
-                        <Image src="../../../src/component/image/subscribe.jpg" />
+                        <Image src="../../../src/assets/image/subscribe.jpg" />
                     </div>
                     <div className="mt-[120px] mb-[74px] flex justify-between">
                         <div className="w-[376px]">
                             <div>
-                                <Image
-                                    src="../../../src/component/image/logo.png"
-                                    className="!w-auto"
-                                />
+                                <Image src={f_logo} className="!w-auto" />
                             </div>
                             <div className="mt-6 mb-4">
                                 <p className="text-Paragraph text-base font-Poppins font-semibold leading-8 w-[300px]">

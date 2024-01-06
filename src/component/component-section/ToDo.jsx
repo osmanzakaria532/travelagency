@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import Container from "../component-layout/Container";
 
-import toDoHeadingShape from "../image/toDoHeadingShape.png";
+import toDoHeadingShape from "../../../src/assets/image/toDoHeadingShape.png";
 
 const ToDo = () => {
     const [div, setDiv] = useState([
         {
-            image: "../../../src/component/image/toDoXIcon_1.png",
+            image: "../../src/assets/image/toDoXIcon_1.png",
             title: "Sign Up",
             description:
                 "Completes all the work associated with planning and processing",
-            shape: "../../../src/component/image/toDoItemShape_1.png",
+            shape: "../../../src/assets/image/toDoItemShape_1.png",
         },
         {
-            image: "../../../src/component/image/toDoXIcon_2.png",
+            image: "../../../src/assets/image/toDoXIcon_2.png",
             title: "Worth of Money",
             description:
                 "After successful access then book from exclusive deals & pricing",
-            shape: "../../../src/component/image/toDoItemShape_2.png",
+            shape: "../../../src/assets/image/toDoItemShape_2.png",
         },
         {
-            image: "../../../src/component/image/toDoXIcon_3.png",
+            image: "../../../src/assets/image/toDoXIcon_3.png",
             title: "Exciting Travel",
             description:
                 "Start and explore a wide range of exciting travel experience.",
-            shape: "../../../src/component/image/toDoItemShape_1.png",
+            shape: "../../../src/assets/image/toDoItemShape_1.png",
         },
     ]);
 
@@ -49,7 +49,7 @@ const ToDo = () => {
                     <div className="flex flex-col sm:flex-row justify-between">
                         {div.length != 0 &&
                             div.map((value, index) => (
-                                <div className="w-[370px] py-10 px-10 bg-white rounded-[8px] relative z-10">
+                                <div className="w-[370px] py-10 px-10 bg-white rounded-[8px] relative z-10 shadow-[14px_24px_72px_0px_rgba(102,102,102,.1)]">
                                     <div>
                                         <div className="w-[48px] h-[51px]">
                                             <img

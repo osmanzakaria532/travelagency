@@ -9,7 +9,7 @@ import { useState } from "react";
 const Exclusive = () => {
     const [div, setDiv] = useState([
         {
-            image: "../../../src/component/image/ex_photo_1.jpg",
+            image: "../../../src/assets/image/ex_photo_1.jpg",
             title: "Madrid",
             starMark: "4.3",
             location: "Spain",
@@ -17,7 +17,7 @@ const Exclusive = () => {
             newPrice: "850",
         },
         {
-            image: "../../../src/component/image/ex_photo_2.jpg",
+            image: "../../../src/assets/image/ex_photo_2.jpg",
             title: "Firenze",
             starMark: "4.5",
             location: "Italy",
@@ -25,7 +25,7 @@ const Exclusive = () => {
             newPrice: "750",
         },
         {
-            image: "../../../src/component/image/ex_photo_3.jpg",
+            image: "../../../src/assets/image/ex_photo_3.jpg",
             title: "Paris",
             starMark: "4.4",
             location: "France",
@@ -33,7 +33,7 @@ const Exclusive = () => {
             newPrice: "599",
         },
         {
-            image: "../../../src/component/image/ex_photo_4.jpg",
+            image: "../../../src/assets/image/ex_photo_4.jpg",
             title: "London",
             starMark: "4.8",
             location: "UK",
@@ -60,7 +60,7 @@ const Exclusive = () => {
                 <Container className="flex justify-between">
                     {div.length != 0 &&
                         div.map((value, index) => (
-                            <div className="w-[270px] border rounded-[8px] group">
+                            <div className="w-[270px] border rounded-[8px] group hover:shadow-[0px_16px_80px_0px_rgba(254,147,64,0.20)] transition-all duration-300">
                                 <div className="w-[270px] h-[290px] rounded-[8px] overflow-hidden relative ">
                                     <Image src={value.image} />
                                     <div className="bg-black/40 absolute z-50 top-0 left-0 w-full h-0 group-hover:h-full transition-all duration-700 flex  items-end justify-center ">
